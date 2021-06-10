@@ -15,14 +15,14 @@ namespace LainausjarjestelmaMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Tietoa näistä sivusta.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Careerian yhteystieto sivusto.";
 
             return View();
         }
