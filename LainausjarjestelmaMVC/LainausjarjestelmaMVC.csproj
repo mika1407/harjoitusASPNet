@@ -130,11 +130,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EsineetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Models\Esineet.cs">
-      <DependentUpon>LainausDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Esineet.cs">
+      <DependentUpon>LainausDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LainausDBModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -167,8 +167,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\LainausDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LainausDBModel.Context.cs</LastGenOutput>
       <DependentUpon>LainausDBModel.edmx</DependentUpon>
+      <LastGenOutput>LainausDBModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\LainausDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

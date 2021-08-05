@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ac1c814a271a4f1dacd30ed1a49c3a1b" Name="Diagram1">
-        <EntityTypeShape EntityType="LainausDBModel.Esineet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="LainausDBModel.Logins" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="a8cbe8f1fd6644708bc447f6ce7762ae" Name="Diagram1">
+        <EntityTypeShape EntityType="LainausDBomaModel.Esineet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LainausDBomaModel.Logins" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

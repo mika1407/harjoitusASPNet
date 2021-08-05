@@ -9,10 +9,10 @@ namespace LainausjarjestelmaMVC.Controllers
 {
     public class EsineetController : Controller
     {
-        // GET: Esineet
+        //GET: Esineet
         public ActionResult Index()
         {
-            LainausDBEntities db = new LainausDBEntities();
+            LainausDBomaEntities db = new LainausDBomaEntities();
             List<Esineet> model = db.Esineet.ToList();
             db.Dispose();
             return View(model);
