@@ -1,35 +1,41 @@
 ﻿@model IEnumerable<LainausjarjestelmaMVC.Models.Esineet>
+
 @{
     ViewBag.Title = "Index";
 }
-<h2>Lainattavat esineet</h2>
-<h4>Esineet: @Model.Count() kappaletta</h4>
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Esineen ID</th>
-            <th>Nimi</th>
-            <th>Lainaaja</th>
-            <th>Lainaus Päivä</th>
-            <th>Palautus Päivä</th>
-            <th>Omistaja</th>
-            <th>Kuva</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (LainausjarjestelmaMVC.Models.Esineet prod in Model)
-        {
-        <tr>
-            <td>@prod.EsineID</td>
-            <td>@prod.EsineenNimi</td>
-            <td>@prod.Lainaaja</td>
-            <td>@prod.LainausPaiva</td>
-            <td>@prod.PalautusPaiva</td>
-            <td>@prod.Omistaja</td>
-            <td>@prod.ImageLink</td>
-        </tr>
-        }
 
-    </tbody>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-striped">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.EsineID)</th>
+        <th>@Html.DisplayNameFor(model => model.EsineenNimi)</th>
+        <th>@Html.DisplayNameFor(model => model.Lainaaja)</th>
+        <th>@Html.DisplayNameFor(model => model.LainausPaiva)</th>
+        <th>@Html.DisplayNameFor(model => model.PalautusPaiva)</th>
+        <th>@Html.DisplayNameFor(model => model.Omistaja)</th>
+        <th>@Html.DisplayNameFor(model => model.ImageLink)</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <th>@Html.DisplayFor(modelItem => item.EsineID)</th>
+    <td>@Html.DisplayFor(modelItem => item.EsineenNimi)</td>
+    <td>@Html.DisplayFor(modelItem => item.Lainaaja)</td>
+    <td>@Html.DisplayFor(modelItem => item.LainausPaiva)</td>
+    <td>@Html.DisplayFor(modelItem => item.PalautusPaiva)</td>
+    <td>@Html.DisplayFor(modelItem => item.Omistaja)</td>
+    <td>@Html.DisplayFor(modelItem => item.ImageLink)</td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.EsineID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.EsineID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.EsineID })
+    </td>
+</tr>
+}
+
 </table>
-
