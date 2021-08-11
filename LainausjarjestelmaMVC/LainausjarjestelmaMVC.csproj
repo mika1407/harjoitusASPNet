@@ -211,6 +211,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Esineet\Index.cshtml" />
     <Content Include="Views\Esineet\Edit.cshtml" />
+    <Content Include="Views\Esineet\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
