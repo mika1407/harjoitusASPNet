@@ -13,10 +13,10 @@ namespace LainausjarjestelmaMVC.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LainausDBomaEntities : DbContext
+    public partial class LainausDBomaEntities1 : DbContext
     {
-        public LainausDBomaEntities()
-            : base("name=LainausDBomaEntities")
+        public LainausDBomaEntities1()
+            : base("name=LainausDBomaEntities1")
         {
         }
     

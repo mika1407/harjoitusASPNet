@@ -134,25 +134,25 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Esineet.cs">
-      <DependentUpon>LainausDBModel.tt</DependentUpon>
+      <DependentUpon>EsineetOmaModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LainausDBModel.Context.cs">
+    <Compile Include="Models\EsineetOmaModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LainausDBModel.Context.tt</DependentUpon>
+      <DependentUpon>EsineetOmaModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LainausDBModel.cs">
+    <Compile Include="Models\EsineetOmaModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LainausDBModel.tt</DependentUpon>
+      <DependentUpon>EsineetOmaModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LainausDBModel.Designer.cs">
+    <Compile Include="Models\EsineetOmaModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LainausDBModel.edmx</DependentUpon>
+      <DependentUpon>EsineetOmaModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Logins.cs">
-      <DependentUpon>LainausDBModel.tt</DependentUpon>
+      <DependentUpon>EsineetOmaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -165,24 +165,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\LainausDBModel.Context.tt">
+    <Content Include="Models\EsineetOmaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LainausDBModel.edmx</DependentUpon>
-      <LastGenOutput>LainausDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>EsineetOmaModel.edmx</DependentUpon>
+      <LastGenOutput>EsineetOmaModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\LainausDBModel.tt">
+    <Content Include="Models\EsineetOmaModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LainausDBModel.edmx</DependentUpon>
-      <LastGenOutput>LainausDBModel.cs</LastGenOutput>
+      <DependentUpon>EsineetOmaModel.edmx</DependentUpon>
+      <LastGenOutput>EsineetOmaModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\LainausDBModel.edmx">
+    <EntityDeploy Include="Models\EsineetOmaModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LainausDBModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>EsineetOmaModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\LainausDBModel.edmx.diagram">
-      <DependentUpon>LainausDBModel.edmx</DependentUpon>
+    <Content Include="Models\EsineetOmaModel.edmx.diagram">
+      <DependentUpon>EsineetOmaModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -210,6 +210,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Esineet\Index.cshtml" />
+    <Content Include="Views\Esineet\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

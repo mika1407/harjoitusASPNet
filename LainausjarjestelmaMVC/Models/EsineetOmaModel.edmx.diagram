@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a8cbe8f1fd6644708bc447f6ce7762ae" Name="Diagram1">
+      <Diagram DiagramId="5c359b29e4724ce19d99bfe29112b547" Name="Diagram1">
         <EntityTypeShape EntityType="LainausDBomaModel.Esineet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LainausDBomaModel.Logins" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>

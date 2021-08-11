@@ -56,7 +56,7 @@
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LoginErrorMessage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="LainausDBomaEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="LainausDBomaEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Esineet" EntityType="Self.Esineet" />
           <EntitySet Name="Logins" EntityType="Self.Logins" />
         </EntityContainer>
@@ -65,7 +65,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="LainausDBomaModelStoreContainer" CdmEntityContainer="LainausDBomaEntities">
+        <EntityContainerMapping StorageEntityContainer="LainausDBomaModelStoreContainer" CdmEntityContainer="LainausDBomaEntities1">
           <EntitySetMapping Name="Esineet">
             <EntityTypeMapping TypeName="LainausDBomaModel.Esineet">
               <MappingFragment StoreEntitySet="Esineet">
